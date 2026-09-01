@@ -33,7 +33,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-2 rounded-full bg-[#f7f0e3] px-4 py-2 text-sm font-medium text-[#241a10]">
             <PhoneCall className="w-4 h-4 text-gold" />
-            <span>+92 300 1234567</span>
+            <span>+923445599332</span>
             
           </div>
         </div>
