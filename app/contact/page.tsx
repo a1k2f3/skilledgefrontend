@@ -31,7 +31,7 @@ export default function ContactPage() {
     );
 
     // Your WhatsApp Business Number (Change this to your real number)
-    const whatsappNumber = "923001234567"; // Remove + sign, use country code
+    const whatsappNumber = "923445599332"; // Remove + sign, use country code
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
