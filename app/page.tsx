@@ -134,85 +134,85 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#f7f0e3] py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="mb-10 text-center md:text-left">
-            <p className="text-sm uppercase tracking-[0.28em] text-[#8a6a1b] font-medium">File formats</p>
-            <h2 className="mt-4 text-3xl md:text-5xl font-serif tracking-tight text-[#1a120b]">
-              Every format your production workflow needs
-            </h2>
-            <p className="mt-4 max-w-3xl text-base md:text-lg text-[#4a3b2a]">
-              Every commercial embroidery format, plus the vector files print and signage need. Ask for three at once if it helps — file types are never charged for.
-            </p>
-          </div>
-
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="rounded-2xl border border-[#e9d7a3] bg-white p-6 shadow-sm">
-              <div className="mb-5 flex items-center justify-between gap-3 border-b border-[#f0e7d4] pb-3">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">Embroidery</p>
-                  <h3 className="mt-2 text-2xl font-serif text-[#1a120b]">Machine formats</h3>
-                </div>
-                <span className="rounded-full bg-[#f5e9c8] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#5d4413]">
-                  20+ formats
-                </span>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2">
-                {[
-                  ['.DST', 'Tajima'],
-                  ['.PES', 'Brother / Babylock'],
-                  ['.JEF', 'Janome'],
-                  ['.EXP', 'Melco'],
-                  ['.HUS', 'Husqvarna / Viking'],
-                  ['.EMB', 'Wilcom native'],
-                  ['.SEW', 'Janome / Elna'],
-                  ['.OFM', 'Barudan'],
-                  ['.DAT', 'Toyota / Barudan'],
-                  ['.CSD', 'Singer / Poem'],
-                  ['.VIP', 'Viking / Husqvarna'],
-                  ['.VP3', 'Viking / Husqvarna'],
-                ].map(([ext, name]) => (
-                  <div key={ext} className="rounded-xl border border-[#f0e7d4] bg-[#fffdf9] p-3">
-                    <div className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">{ext}</div>
-                    <div className="mt-2 text-sm font-medium text-[#221b13]">{name}</div>
-                  </div>
-                ))}
-              </div>
+        <section className="bg-[#f7f0e3] py-16 md:py-20">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="mb-10 text-center md:text-left">
+              <p className="text-sm uppercase tracking-[0.28em] text-[#8a6a1b] font-medium">File formats</p>
+              <h2 className="mt-4 text-3xl md:text-5xl font-serif tracking-tight text-[#1a120b]">
+                Every format your production workflow needs
+              </h2>
+              <p className="mt-4 max-w-3xl text-base md:text-lg text-[#4a3b2a]">
+                Every commercial embroidery format, plus the vector files print and signage need. Ask for three at once if it helps — file types are never charged for.
+              </p>
             </div>
 
-            <div className="rounded-2xl border border-[#e9d7a3] bg-white p-6 shadow-sm">
-              <div className="mb-5 flex items-center justify-between gap-3 border-b border-[#f0e7d4] pb-3">
-                <div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">Vector art</p>
-                  <h3 className="mt-2 text-2xl font-serif text-[#1a120b]">Print & signage</h3>
+            <div className="grid gap-8 lg:grid-cols-2">
+              <div className="rounded-2xl border border-[#e9d7a3] bg-white p-6 shadow-sm">
+                <div className="mb-5 flex items-center justify-between gap-3 border-b border-[#f0e7d4] pb-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">Embroidery</p>
+                    <h3 className="mt-2 text-2xl font-serif text-[#1a120b]">Machine formats</h3>
+                  </div>
+                  <span className="rounded-full bg-[#f5e9c8] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#5d4413]">
+                    20+ formats
+                  </span>
                 </div>
-                <span className="rounded-full bg-[#f5e9c8] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#5d4413]">
-                  Free
-                </span>
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {[
+                    ['.DST', 'Tajima'],
+                    ['.PES', 'Brother / Babylock'],
+                    ['.JEF', 'Janome'],
+                    ['.EXP', 'Melco'],
+                    ['.HUS', 'Husqvarna / Viking'],
+                    ['.EMB', 'Wilcom native'],
+                    ['.SEW', 'Janome / Elna'],
+                    ['.OFM', 'Barudan'],
+                    ['.DAT', 'Toyota / Barudan'],
+                    ['.CSD', 'Singer / Poem'],
+                    ['.VIP', 'Viking / Husqvarna'],
+                    ['.VP3', 'Viking / Husqvarna'],
+                  ].map(([ext, name]) => (
+                    <div key={ext} className="rounded-xl border border-[#f0e7d4] bg-[#fffdf9] p-3">
+                      <div className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">{ext}</div>
+                      <div className="mt-2 text-sm font-medium text-[#221b13]">{name}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              <div className="grid gap-3 sm:grid-cols-2">
-                {[
-                  ['.AI', 'Adobe Illustrator'],
-                  ['.EPS', 'Print & screen'],
-                  ['.SVG', 'Web & cutters'],
-                  ['.PDF', 'Universal proof'],
-                  ['.CDR', 'CorelDRAW'],
-                  ['.PNG', 'High-resolution export'],
-                  ['.JPG', 'Image delivery'],
-                  ['.PSD', 'Photoshop layered'],
-                ].map(([ext, name]) => (
-                  <div key={ext} className="rounded-xl border border-[#f0e7d4] bg-[#fffdf9] p-3">
-                    <div className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">{ext}</div>
-                    <div className="mt-2 text-sm font-medium text-[#221b13]">{name}</div>
+              <div className="rounded-2xl border border-[#e9d7a3] bg-white p-6 shadow-sm">
+                <div className="mb-5 flex items-center justify-between gap-3 border-b border-[#f0e7d4] pb-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">Vector art</p>
+                    <h3 className="mt-2 text-2xl font-serif text-[#1a120b]">Print & signage</h3>
                   </div>
-                ))}
+                  <span className="rounded-full bg-[#f5e9c8] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-[#5d4413]">
+                    Free
+                  </span>
+                </div>
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {[
+                    ['.AI', 'Adobe Illustrator'],
+                    ['.EPS', 'Print & screen'],
+                    ['.SVG', 'Web & cutters'],
+                    ['.PDF', 'Universal proof'],
+                    ['.CDR', 'CorelDRAW'],
+                    ['.PNG', 'High-resolution export'],
+                    ['.JPG', 'Image delivery'],
+                    ['.PSD', 'Photoshop layered'],
+                  ].map(([ext, name]) => (
+                    <div key={ext} className="rounded-xl border border-[#f0e7d4] bg-[#fffdf9] p-3">
+                      <div className="text-xs uppercase tracking-[0.2em] text-[#8a6a1b]">{ext}</div>
+                      <div className="mt-2 text-sm font-medium text-[#221b13]">{name}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* TRUST BAR */}
       <div className="bg-white py-6 border-b">

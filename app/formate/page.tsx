@@ -140,7 +140,40 @@ function page() {
           </div>
         </div>
       </section>
+ <section className="bg-[#f7f0e3] py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <div className="rounded-[30px] border border-[#ead19a] bg-white px-6 py-10 shadow-sm md:px-10 md:py-12">
+            <p className="text-sm uppercase tracking-[0.28em] text-[#8a6a1b] font-medium">What you send us</p>
+            <h2 className="mt-4 text-3xl md:text-5xl font-serif tracking-tight text-[#1a120b]">
+              Send whatever you have.
+            </h2>
+            <p className="mx-auto mt-5 max-w-3xl text-base md:text-lg text-[#4a3b2a]">
+              A crisp vector is ideal, but it is not required. A phone photo of a hand-drawn sketch is enough for a digitizer to work from — and if the artwork will not stitch as drawn, we tell you before we start, not after.
+            </p>
 
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm font-medium text-[#2d2118]">
+              {['JPG', 'PNG', 'PDF', 'AI', 'EPS', 'TIFF', 'BMP', 'GIF', 'Hand-drawn sketch'].map((type) => (
+                <span key={type} className="rounded-full border border-[#e9d7a3] bg-[#fffdf9] px-3 py-2">
+                  {type}
+                </span>
+              ))}
+            </div>
+
+            <div className="mt-10 rounded-2xl border border-dashed border-[#d3b266] bg-[#fff9ef] p-6 text-center">
+              <h3 className="text-xl md:text-2xl font-serif text-[#1a120b]">Machine not listed?</h3>
+              <p className="mt-3 text-base text-[#4a3b2a]">
+                Tell us the make and model when you order and we will supply that format. If it is anything unusual, our team confirms it before starting work.
+              </p>
+              <a
+                href="https://digitizingzone.com/contact"
+                className="mt-5 inline-flex items-center justify-center rounded-full bg-[#1a120b] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2a2118]"
+              >
+                Ask about your machine
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="bg-[#fffaf3] py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-10 lg:grid-cols-[1.05fr_1.35fr] lg:items-start">
@@ -256,6 +289,8 @@ function page() {
           </div>
         </div>
       </section>
+
+     
     </div>
   )
 }
