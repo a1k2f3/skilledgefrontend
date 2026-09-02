@@ -20,8 +20,20 @@ export default function DesignCard({ design }: { design: Design }) {
           src={design.image}
           alt={design.name}
           fill
-          className="object-cover group-hover:scale-110 transition-transform duration-700"
+          className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:opacity-0"
         />
+        <div className="absolute inset-0 overflow-hidden bg-[#d8c9a5] [background-image:radial-gradient(rgba(92,68,35,0.16)_1px,transparent_1px),linear-gradient(135deg,#e8ddc2,#cbb98c)] [background-size:4px_4px,100%_100%] opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+          <Image
+            src={design.image}
+            alt={`${design.name} embroidered logo preview`}
+            fill
+            className="object-contain p-8 grayscale contrast-200 brightness-90 opacity-95 mix-blend-multiply drop-shadow-[1px_1px_0_#d4af37] drop-shadow-[-1px_-1px_0_#fff3b0] transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="pointer-events-none absolute inset-0 opacity-25 [background-image:repeating-linear-gradient(120deg,transparent_0,transparent_2px,rgba(92,68,35,0.35)_2px,rgba(92,68,35,0.35)_3px)] [background-size:6px_6px]" />
+          <span className="absolute bottom-4 left-4 bg-[#3f321f]/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-white">
+            Embroidered logo
+          </span>
+        </div>
         <button className="absolute top-4 right-4 p-3 bg-white/80 rounded-full hover:bg-white transition-colors">
           <Heart className="w-5 h-5" />
         </button>

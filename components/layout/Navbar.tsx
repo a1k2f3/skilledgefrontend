@@ -23,11 +23,7 @@ export default function Navbar() {
       <div className="bg-white text-black border-b border-gold/20 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-3">
-            {/* <div className="w-11 h-11 bg-gold rounded-full flex items-center justify-center text-dark-bg font-bold text-2xl">E</div>
-            <div> */}
-              {/* <span className="text-2xl font-serif tracking-widest">Skill Edge</span>
-              <p className="text-[10px] text-gold -mt-1">EMBROIDERY</p> */}
-            {/* </div> */}
+           
             <img src="./image.png"width={110} alt="" />
           </Link>
 
