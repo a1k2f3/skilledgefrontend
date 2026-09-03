@@ -49,9 +49,11 @@ export default function Navbar() {
             <Link href="/desgins" className="hover:text-gold transition">Designs</Link>
             <Link href="/badges" className="hover:text-gold transition">Badges</Link>
             <Link href="/about" className="hover:text-gold transition">About</Link>
+            <Link href="/pricing" className="hover:text-gold transition">Pricing</Link>
+            <Link href="/services" className="hover:text-gold transition">Services</Link>
             <Link href="/business-proposals" className="hover:text-gold transition">For Business</Link>
             <Link href="/contact" className="hover:text-gold transition">Get a Quote</Link>
-            <Link href="/formate" className="hover:text-gold transition">Formate</Link>
+            <Link href="/format" className="hover:text-gold transition">Format</Link>
           </div>
 
           <div className="flex items-center gap-6">
